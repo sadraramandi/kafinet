@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <!-- اسکرول ویو برای محتوای اصلی -->
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <!-- لوگو -->
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="271dp"
+                android:layout_height="231dp"
+                app:srcCompat="@drawable/sadra_logo" />
+
+            <!-- متن عنوان -->
+            <TextView
+                android:id="@+id/textViewTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="شماره موبایل خود را وارد کنید"
+                android:textColor="@color/black"
+                android:textSize="22sp" />
+
+            <!-- اولین ادیت تکست -->
+            <EditText
+                android:id="@+id/editText1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="24dp"
+                android:backgroundTint="#000000"
+                android:hint="شماره موبایل"
+                android:inputType="number"
+                android:textColor="#000000"
+                android:textColorHint="#000000" />
+
+            <!-- دومین ادیت تکست (تکرار رمز) -->
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="24dp"
+                android:backgroundTint="#000000"
+                android:hint="تکرار رمز عبور"
+                android:inputType="textPassword"
+                android:textColor="#000000"
+                android:textColorHint="#000000"
+                android:visibility="gone" />
+
+            <!-- دکمه ادامه -->
+            <Button
+                android:id="@+id/buttonNext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:backgroundTint="#000000"
+                android:text="ادامه"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>
